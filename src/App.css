@@ -1,4 +1,11 @@
 *{
   margin:0px;
   padding:0px;
+  font-family: "Inter";
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
+body{
+  background-color: #f9f9f9 ;
+}
+

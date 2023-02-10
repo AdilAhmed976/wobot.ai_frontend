@@ -3,9 +3,9 @@ import { Login } from './pages/Login';
 
 function App() {
   return (
-    <div style={{border:"1px solid black"}} >
+    <>
       <Login/>
-    </div>
+    </>
   );
 }
 
