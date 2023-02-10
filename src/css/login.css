@@ -49,16 +49,16 @@
     /* border: 1px solid red; */
     width: 80%;
     margin: auto;
-    padding: 30px;
+    
+    padding: 0px;
     height: 100vh;
 }
 
 .form_container_box_form {
-    /* border: 1px solid red; */
     width: 40%;
     margin: auto;
-    min-height: 70vh;
-    padding: 40px;
+    min-height: 80vh;
+    padding: 20px 40px 10px 40px;
     background-color: white;
     border-radius: 10px;
 }
@@ -113,28 +113,12 @@
     height: 100vh;
 }
 
-.form_container_box {
-    width: 80%;
-    margin: auto;
-    padding: 30px;
-    height: 100vh;
-}
-
-.form_container_box_form {
-   
-    width: 40%;
-    margin: auto;
-    min-height: 70vh;
-    padding: 40px;
-    background-color: white;
-    border-radius: 10px;
-}
-
 .form{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+   
 }
 label {
     color: #787c86;
@@ -178,8 +162,25 @@ input {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    /* width: 100%; */
+    /* border: 1px solid red; */
 }
 
+button{
+    padding: 4px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid lightgray;
+    margin-right: 4px;
+    border-radius: 10px;
+    /* outline: none; */
+}
+
+.submit {
+    background-color: #3766e8;
+    color: white;
+    padding: 10px 0px 10px 0px;
+}
 @media only screen and (min-width:100px) and (max-width:575px)  { 
     .form_container_box {
         width: 100%;
@@ -187,7 +188,7 @@ input {
     }
     .form_container_box_form {
         /* border: 1px solid red; */
-        width: 90%;
+        width: 95%;
         margin: auto;
         padding: 20px;
         background-color: white;
@@ -202,7 +203,7 @@ input {
     }
     .form_container_box_form {
         /* border: 1px solid red; */
-        width: 60%;
+        width: 70%;
         margin: auto;
         padding: 20px;
         background-color: white;
@@ -218,8 +219,7 @@ input {
         padding: 20px;
     }
     .form_container_box_form {
-        /* border: 1px solid red; */
-        width: 50%;
+        width: 60%;
         margin: auto;
         padding: 20px;
         background-color: white;

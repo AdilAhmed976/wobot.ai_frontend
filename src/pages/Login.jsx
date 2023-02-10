@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/login.css';
 import { Icon } from '../components/Logo';
+
 export const Login = () => {
+const [location , setLocation] = useState("")
   return (
 
     <div>
@@ -42,12 +44,66 @@ export const Login = () => {
                                 <input placeholder='e.g John Doe' />    
                             </div>
                             <div className='boxes' >
-                                <label>Your Name</label>
+                                <label>Company Name</label>
                                 <input placeholder='e.g John Doe' />    
                             </div>
                             <div className='boxes' >
-                                <label>Your Name</label>
-                                <input placeholder='e.g John Doe' />    
+                                <label>Industry</label>
+                                <input list="Industry" name="Industry" />
+                                    <datalist id="Industry">
+                                        <option value="Internet Explorer"/>
+                                        <option value="Firefox"/>
+                                        <option value="Chrome"/>
+                                        <option value="Opera"/>
+                                        <option value="Safari"/>
+                                    </datalist> 
+                            </div>
+                            <div className='boxes' >
+                                <text>Number of locations</text>
+                                <div>
+                                    <button 
+                                        style={{
+                                            backgroundColor:location== "1-20" ? "#3766e8" : "white",
+                                            color:location== "1-20" ? "white" : "black",
+                                        }}
+                                        onClick={()=>setLocation("1-20")} 
+                                    >
+                                        1-20
+                                    </button>
+                                    <button
+                                        style={{
+                                            backgroundColor:location== "21-50" ? "#3766e8" : "white",
+                                            color:location== "21-50" ? "white" : "black",
+                                        }} 
+                                        onClick={()=>setLocation("21-50")} >
+                                            21-50
+                                    </button>
+                                    <button 
+                                        style={{
+                                            backgroundColor:location== "51-200" ? "#3766e8" : "white",
+                                            color:location== "51-200" ? "white" : "black",
+                                        }}
+                                        onClick={()=>setLocation("51-200")} >
+                                            51-200
+                                    </button>
+                                    <button 
+                                        style={{
+                                            backgroundColor:location== "201-500" ? "#3766e8" : "white",
+                                            color:location== "201-500" ? "white" : "black",
+                                        }}
+                                        onClick={()=>setLocation("201-500")} >
+                                            201-500
+                                    </button>
+                                    <button 
+                                        style={{
+                                            backgroundColor:location== "500" ? "#3766e8" : "white",
+                                            color:location== "500" ? "white" : "black",
+                                        }}
+                                        onClick={()=>setLocation("500")} >
+                                            500+
+                                    </button>
+                                </div>
+                                <button className='submit' >Submit</button>
                             </div>
                         </div>
                 </div>
